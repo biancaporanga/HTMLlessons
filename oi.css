@@ -1,0 +1,21 @@
+body{
+	background-color: lightblue;
+	border: 1px solid black;
+	padding: 2%;
+	margin: 3%;
+}
+
+h2{
+	color: fuchsia;
+	font-family: courier;
+    font-size: 150%;
+}
+p{
+	color: green;
+}
+#p1{
+	color: blue;
+}
+p.error {
+    color: red;
+}
