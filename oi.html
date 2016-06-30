@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
+<meta charset="UTF-8" name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
 <html lang="pt-BR">
 <head>
 <link rel="stylesheet" href="oi.css">
 <title>Minha linda primeira página :3</title>
+<base href="file:///C:/Users/Bianca/Documents/htmllessons/oi.html">
 </head>
 <!--O conteúdo do head contém informações sobre o documento-->
 
-<body style="font-family:verdana; text-align:center;">
-<h1 style="color:darkblue;">Head</h1>
+<body>
+<header>
+<h1>Head</h1>
 <a href="#tips"><h2>Head</h2></a>
 <h6 style="font-size:50%">Head</h6>
-<hr>
+</header>
+<ul id="menu">
+	<li>CSS</li>
+	<li>HTML</li>
+	<li>Java</li>
+	<li>PHP</li>
+</ul>
 <p style="font-family:courier" title="Título do Parágrafo">Parágrafo! </p>
 <p style="color:darkred;">
 <a href="http://facebook.com" target="framename">Um link.</a>
@@ -26,9 +34,10 @@ oi tudo bem
 	com vc
 </pre>
 </p>
+<div class="texto">
 <p id="tips">;)</p>
 <p style="text-align:justify">Lorem ipsum ellentesque nec vel, viverra et id, suscipit felis consequat vel convallis, lacus eget viverra metus <em>adsdds </em>etiam suspendisse, pelle<b>996559404</b>ntesque nulla<strong>dipiscing sit urna <del>aaaaaaaaah</del> sed. Accumsan erat, adipiscing adipiscing quam sollici</strong>aliquam atudin ut montes sit, eros ac co<ins>ce dapibus, </ins>ngue fusin l<sup>dolor sit amet, p</sup>cus enim consectetuer egetha<sub>. Vestibulum est, p</sub>retra lecc, sit nisl est egestas. Me<mark>ooooo</mark>tus id tem<small>tus, amet aliquam wisi a</small>por vivamus, duis cras ante. Vestibulum velit, est nisl arcu luctus ligula est sed, tempor arcu enim proin purus velit duis.</p><q>For 50 years, WWF has been protecting the future of nature. The world's leading conserv</q><blockquote cite="http://www.worldwildlife.org/who/index.html">ation organization, WWF works in 100 countries and is supported by 1.2 million memb<abbr title="World Health Organization">ers in the United States and close to 5</abbr> million globally.</blockquote>
-
+</div>
 <cite>O Grito</cite>, 1893.<br><br>
 <p><bdo dir="rtl">This text will be written from right to left</bdo></p>
 <address>
@@ -58,6 +67,7 @@ Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189</samp>
   <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
 </map>
 <table style="width:100%;">
+<caption>Estimativa</caption>
   <tr>
     <td>Jill</td>
     <td>Smith</td> 
@@ -74,5 +84,58 @@ Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189</samp>
   	<td>67</td>
   </tr>
 </table>
+<br>
+<table>
+	<tr>
+		<th colspan="2">Telefone</th>
+	</tr>
+	<tr>
+		<td>32752820</td>
+		<td>996559400</td>
+	</tr>
+</table>
+<!--Também teem o rowspan-->
+<ul>
+	<li>Café</li>
+	<li>Chá</li>
+	<li>Leite</li>
+</ul>
+<ol type="a">
+	<li>Café</li>
+	<li>Chá</li>
+	<li>Leite</li>
+</ol>
+<dl>
+	<dt>Café</dt>
+	<dd>Preto</dd>
+	<dt>Leite</dt>
+	<dd>Branco</dd>
+</dl>
+<!--Além da div, tem o spam, que é marcação inline-->
+<iframe src="file:///C:/Users/Bianca/Documents/htmllessons/oi.html" width="100%" height="250px"></iframe>
+<!--você pode usar o iframe como target de um link-->
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<!--
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+<meta charset="UTF-8">
+<meta name="author" content="Hege Refsnes">
+<meta http-equiv="refresh" content="30">
+-->
+<!--
+Estrutura de um site:
+<header> - Defines a header for a document or a section
+<nav> - Defines a container for navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent self-contained article
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details
+<summary> - Defines a heading for the <details> element
+-->
 </body>
 </html>

@@ -3,6 +3,7 @@ body{
 	border: 1px solid black;
 	padding: 2%;
 	margin: 3%;
+	text-align: justify;
 }
 
 h2{
@@ -17,25 +18,25 @@ p{
 #p1{
 	color: blue;
 }
-p.error {
+p.error{
     color: red;
 }
-a:link    {
+a:link{
 	color:green; 
 	background-color:transparent;
 	text-decoration:none
 }
-a:visited {
+a:visited{
 	color:pink;
 	background-color:transparent;
 	text-decoration:none
 }
-a:hover   {
+a:hover{
 	color:red;
 	background-color:transparent; 
 	text-decoration:underline
 }
-a:active  {
+a:active{
 	color:yellow;
 	background-color:transparent;
 	text-decoration:underline
@@ -54,4 +55,40 @@ th, td{
 }
 table{
 	border-spacing: 2px;
+}
+ul{
+	text-align: left;
+	list-style-type: circle;
+	/*display: inline;*/
+}
+
+ol{
+	text-align: left;
+}
+dl{
+	text-align: left;
+}
+ul#menu li{
+	display: inline;
+	text-align: center;
+	list-style-type: none;
+	margin: 50 50 50 50;
+}
+ul#menu
+{
+	background-color: white;
+	padding: 20px;
+	margin: 0;
+}
+div.texto{
+	background-color: orange;
+}
+iframe{
+	border:none;
+}
+header{
+	background-color: black;
+	color:white;
+	padding: 5px;
+	margin: 0;
 }
