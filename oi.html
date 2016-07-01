@@ -137,5 +137,75 @@ Estrutura de um site:
 <details> - Defines additional details
 <summary> - Defines a heading for the <details> element
 -->
+<form action="oi.php" method="get">
+<!--pode ser usado get (padrão) ou post. O get é visível na URL, então post é mais recomendável para informações sigilosas (senhas ou dados de update)-->
+<fieldset>
+<legend>Informações pessoais:</legend>
+	Nome:<br />
+	<input type="text" name="Nome:">
+	<br /><br />
+	Senha:<br>
+	<input type="password" name="senha">
+	<br /><br />
+	Gênero:<br />
+	<input type="radio" name="genero" value="masculino"> Masculino<br />
+	<input type="radio" name="genero" value="Faminino"> Feminino
+	<br />
+	<br />
+	Estado:<br />
+	<select name="estados">
+		<option value="SP">SP</option>
+		<option value="RJ">RJ</option>
+		<option value="ES" selected>ES</option>
+		<option value="MG">MG</option>
+	</select>
+	<br />
+	<br />
+	Mensagem:<br />
+	<textarea name="mensagem" rows="10" cols="30">Deixe aqui sua mensagem.</textarea>
+	<br />
+	<br />
+	<input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> 
+  <br><br>
+  Cores preferidas:<br>
+  <input type="checkbox" value="Azul" name="cor1">Azul<br>
+  <input type="checkbox" value="Branco" name="cor2">Branco<br>
+  <input type="checkbox" value="Rosa" name="cor3">Rosa<br>
+  <input type="checkbox" value="Verde" name="cor4">Verde<br>
+  <br><br>
+  Encriptação: <keygen name="seguranca"></keygen>
+  <br><br>
+	<input type="submit" name="Enviar" value="Enviar">
+	<button type="button" onclick="alert('Hello World!')">Clique aqui!</button>
+	<input type="url" name="quantity" min="1" max="5">
+	<!--Atributos
+	disabled - Specifies that an input field should be disabled
+max - Specifies the maximum value for an input field
+maxlength -Specifies the maximum number of character for an input field
+min - Specifies the minimum value for an input field
+pattern - Specifies a regular expression to check the input value against
+readonly - Specifies that an input field is read only (cannot be changed)
+required - Specifies that an input field is required (must be filled out)
+size - Specifies the width (in characters) of an input field
+step - Specifies the legal number intervals for an input field
+value - Specifies the default value for an input field
+
+The formaction Attribute
+The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.
+
+The formaction attribute overrides the action attribute of the <form> element.
+
+The formaction attribute is used with type="submit" and type="image".
+-->
+<input type="text" name="firstname" value="John" readonly="">
+</form>
+</fieldset>
 </body>
 </html>
