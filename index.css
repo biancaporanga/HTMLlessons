@@ -1,0 +1,52 @@
+body{
+	text-align: justify;
+	margin: 5%;
+	font-family: arial;
+	background: thistle url("1.jpg") repeat-x fixed top;
+	/*background-attachment: fixed;*/
+
+	/*ORDEM:
+	background-color
+	background-image
+	background-repeat
+	background-attachment
+	background-position*/
+}
+header
+{
+	background-color: #ed829c;
+	padding: 10% 10% 10% 5%;
+	margin: 0;
+	color: white;
+}
+article{
+	background-color: white;
+	padding: 5% 4% 3% 5%;
+	margin: 0;
+
+}
+nav{
+	background-color: #b9a1d1;
+	margin: 0;
+	padding: 3% 0 0 3%;
+}
+nav ul
+{
+	margin-bottom: 2%;
+}
+nav ul li{
+	text-decoration: none;
+	display: inline;
+	padding-bottom: 10;
+	border:none;
+
+}
+nav ul a{
+	text-decoration: none;
+	padding: 0.5%;
+	margin-bottom: 0.5%;
+}
+nav ul a:hover{
+	border-bottom-style: solid;
+	border-color: #531a67;
+}
