@@ -1,7 +1,11 @@
 body{
 	text-align: justify;
 	margin: 5%;
-	font-family: arial;
+	font-family: arial, sans-serif;
+	font-style: normal;
+	/*font-style: italic;*/
+	font-weight: normal;
+	/*font-weight: bold;*/
 	background: thistle url("1.jpg") repeat-x fixed top;
 	/*background-attachment: fixed;*/
 
@@ -15,38 +19,58 @@ body{
 header
 {
 	background-color: #ed829c;
-	padding: 10% 10% 10% 5%;
+	padding: 7% 7% 7% 3%;
 	margin: 0;
 	color: white;
 }
 article{
 	background-color: white;
 	padding: 5% 4% 3% 5%;
-	margin: 0;
-
+	margin-top: 0.7%;
+	text-indent: 10%
 }
 nav{
 	background-color: #b9a1d1;
-	margin: 0;
-	padding: 3% 0 0 3%;
+	width: 100%
+	margin: auto;
+	padding: 0.025% 0 0.025% 0;
 }
-nav ul
-{
-	margin-bottom: 2%;
-}
-nav ul li{
+nav ul a li{
 	text-decoration: none;
 	display: inline;
-	padding-bottom: 10;
+	padding: 0 0 10 0;
 	border:none;
+	margin:0 0 0.5% 0;
 
 }
 nav ul a{
 	text-decoration: none;
-	padding: 0.5%;
-	margin-bottom: 0.5%;
+	padding:0 0 14px 0;
+	margin:0 6% 0 6%;	
 }
 nav ul a:hover{
 	border-bottom-style: solid;
 	border-color: #531a67;
+	color:#774688;
+	
 }
+nav ul a:link{
+	color: #531a67;
+}
+nav ul a:visited{
+	color: #531a67;
+}
+nav ul a:active{
+	color: #531a67;
+}
+/*
+border-width: dotted solid double dashed
+border-radius
+max or min-width or height
+text-transform: uppercase ou lowercase ou capitalize
+letter-space:3px
+line-height:3px - espaçamento entre linhas
+text-direction: rtl; - right to left
+word-spacing: 5px;
+font-variant: small-caps;
+*/
