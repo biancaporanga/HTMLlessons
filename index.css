@@ -1,13 +1,23 @@
+@font-face{
+font-family: Chops;
+src:url("CHOPS___.ttf");
+
+}
+@font-face{
+	font-family: RobotoCondensed;
+	src:url("RobotoCondensed-Regular.ttf");
+
+}
 body{
 	text-align: justify;
 	margin: 5%;
-	font-family: arial, sans-serif;
+	font-family: RobotoCondensed, sans-serif;
 	font-style: normal;
 	/*font-style: italic;*/
 	font-weight: normal;
 	/*font-weight: bold;*/
-	background: thistle url("1.jpg") repeat-x fixed top;
 	/*background-attachment: fixed;*/
+	background: thistle url("1.jpg") repeat-x fixed top;
 
 	/*ORDEM:
 	background-color
@@ -16,18 +26,31 @@ body{
 	background-attachment
 	background-position*/
 }
+html{
+	/*background: url("1-1.jpg") repeat-x fixed bottom;*/
+}
 header
 {
 	background-color: #ed829c;
-	padding: 7% 7% 7% 3%;
-	margin: 0;
+	padding: 5% 5% 5% 7%;
+	margin:0;
 	color: white;
+	font-family: Chops, serif;
+	font-size: 5em;
+
 }
 article{
 	background-color: white;
 	padding: 5% 4% 3% 5%;
 	margin-top: 0.7%;
 	text-indent: 10%
+}
+article ol{
+	text-align: left;
+	list-style: upper-roman inside url("pseudo-element-bullet-featured.png");
+}
+table th, tr td{
+	
 }
 nav{
 	background-color: #b9a1d1;
@@ -38,10 +61,12 @@ nav{
 nav ul a li{
 	text-decoration: none;
 	display: inline;
-	padding: 0 0 10 0;
 	border:none;
 	margin:0 0 0.5% 0;
-
+}
+nav ul{
+	padding: 0;
+	text-align: center;
 }
 nav ul a{
 	text-decoration: none;
@@ -50,18 +75,23 @@ nav ul a{
 }
 nav ul a:hover{
 	border-bottom-style: solid;
-	border-color: #531a67;
-	color:#774688;
-	
+	border-color: #531a67;	
+}
+nav ul a:hover li{
+	color:white;	
 }
 nav ul a:link{
 	color: #531a67;
+	font-weight: normal;
 }
 nav ul a:visited{
 	color: #531a67;
 }
 nav ul a:active{
 	color: #531a67;
+}
+p#um{
+	display: inline;
 }
 /*
 border-width: dotted solid double dashed
@@ -73,4 +103,5 @@ line-height:3px - espaçamento entre linhas
 text-direction: rtl; - right to left
 word-spacing: 5px;
 font-variant: small-caps;
+list-style-image: url('sqpurple.gif');
 */
