@@ -39,13 +39,16 @@ header
 	color: white;
 	font-family: Chops, serif;
 	font-size: 5em;
+	max-width: auto;
 
 }
 article{
 	background-color: white;
 	padding: 5% 4% 3% 5%;
 	margin-top: 0.7%;
-	text-indent: 10%
+	text-indent: 10%;
+	float: left;
+	/*max-width: 70%*/
 }
 article ol{
 	text-align: left;
@@ -53,16 +56,25 @@ article ol{
 }
 table{
 	text-indent: 0;
+	width: 100%;
 }
 table, th, td{
-	border: solid 1px black;
+	border-bottom: solid 1px #ddd;
 	border-collapse: collapse;
+	padding: 1%	
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th{
+	background-color: #f0a8b9;
+	color:white;
+}
+ol li{
+	text-indent: 0;
 }
 	
-}
 nav{
 	background-color: #b9a1d1;
-	width: 100%
+	max-width: 100%
 	margin: auto;
 	padding: 0.025% 0 0.025% 0;
 }
@@ -98,6 +110,18 @@ nav ul a:visited{
 nav ul a:active{
 	color: #531a67;
 }
+/*aside{
+	background-color: #b9a1d1;
+	float: right;
+	position: absolute;
+	top:38.8%;
+	right: 5%;
+	height:600px;
+	width: 18.9%
+}*/
+/*#fixed{
+	position: absolute;
+}*/
 /*
 border-width: dotted solid double dashed
 border-radius
@@ -109,4 +133,12 @@ text-direction: rtl; - right to left
 word-spacing: 5px;
 font-variant: small-caps;
 list-style-image: url('sqpurple.gif');
+display:none;
+display:block;
+"" inline
+"" inherit (herança)
+visibility: hidden;
+tabela:
+vertical-align: bottom;
+z-inex: -1; (posição atrás de outro elemento)
 */
