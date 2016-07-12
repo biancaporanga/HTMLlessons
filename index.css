@@ -40,15 +40,14 @@ header
 	font-family: Chops, serif;
 	font-size: 5em;
 	max-width: auto;
-
 }
 article{
 	background-color: white;
 	padding: 5% 4% 3% 5%;
-	margin-top: 0.7%;
 	text-indent: 10%;
 	float: left;
-	/*max-width: 70%*/
+	width: 70%;
+	height: 100%
 }
 article ol{
 	text-align: left;
@@ -72,53 +71,70 @@ ol li{
 	text-indent: 0;
 }
 	
-nav{
+nav div#menu{
 	background-color: #b9a1d1;
 	max-width: 100%
 	margin: auto;
 	padding: 0.025% 0 0.025% 0;
 }
-nav ul a li{
+nav div#menu ul a li{
 	text-decoration: none;
 	display: inline;
 	border:none;
 	margin:0 0 0.5% 0;
 }
-nav ul{
+nav div#menu ul{
 	padding: 0;
 	text-align: center;
 }
-nav ul a{
+nav div#menu ul a{
 	text-decoration: none;
 	padding:0 0 14px 0;
-	margin:0 6% 0 6%;	
+	margin:0 6% 0 6%;
 }
-nav ul a:hover{
+nav div#menu ul a:hover{
 	border-bottom-style: solid;
 	border-color: #531a67;	
 }
-nav ul a:hover li{
-	color:white;	
+nav div#menu ul a:hover li{
+	#menucolor:whie;	
 }
-nav ul a:link{
+nav div#menu ul a:link{
 	color: #531a67;
 	font-weight: normal;
 }
-nav ul a:visited{
+nav div#menu ul a:visited{
 	color: #531a67;
 }
-nav ul a:active{
+nav div#menu ul a:active{
 	color: #531a67;
 }
-/*aside{
-	background-color: #b9a1d1;
-	float: right;
-	position: absolute;
-	top:38.8%;
-	right: 5%;
-	height:600px;
-	width: 18.9%
-}*/
+aside{
+	/*background-color: #b9a1d1;*/
+	float: left;
+	/*position: absolute;*/
+	height:100%;
+	width: 20%;
+	margin-left: 1%;
+	margin-bottom: 500px;
+
+}
+aside img{
+	border-radius: 50%;
+	margin: 10% 0 0 13%;
+}
+#corpo{
+	margin-top: 0.7%;
+}
+#txtaside{
+	background-color: white;
+	padding: 10%;
+}
+#asidetitle{
+	font-family: Chops, serif;
+	font-size: 1.5em;
+	text-align: center;
+}
 /*#fixed{
 	position: absolute;
 }*/
@@ -140,5 +156,7 @@ display:block;
 visibility: hidden;
 tabela:
 vertical-align: bottom;
+--
 z-inex: -1; (posição atrás de outro elemento)
+overflow:auto;
 */
