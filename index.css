@@ -71,42 +71,42 @@ ol li{
 	text-indent: 0;
 }
 	
-nav div#menu{
+nav{
 	background-color: #b9a1d1;
 	max-width: 100%
 	margin: auto;
 	padding: 0.025% 0 0.025% 0;
 }
-nav div#menu ul a li{
+nav ul a li{
 	text-decoration: none;
 	display: inline;
 	border:none;
 	margin:0 0 0.5% 0;
 }
-nav div#menu ul{
+nav ul{
 	padding: 0;
 	text-align: center;
 }
-nav div#menu ul a{
+nav ul a{
 	text-decoration: none;
 	padding:0 0 14px 0;
 	margin:0 6% 0 6%;
 }
-nav div#menu ul a:hover{
+nav ul a:hover{
 	border-bottom-style: solid;
 	border-color: #531a67;	
 }
-nav div#menu ul a:hover li{
-	#menucolor:whie;	
+nav ul a:hover li{
+	color:white;	
 }
-nav div#menu ul a:link{
+nav ul a:link{
 	color: #531a67;
 	font-weight: normal;
 }
-nav div#menu ul a:visited{
+nav ul a:visited{
 	color: #531a67;
 }
-nav div#menu ul a:active{
+nav ul a:active{
 	color: #531a67;
 }
 aside{
@@ -135,9 +135,6 @@ aside img{
 	font-size: 1.5em;
 	text-align: center;
 }
-/*#fixed{
-	position: absolute;
-}*/
 /*
 border-width: dotted solid double dashed
 border-radius
