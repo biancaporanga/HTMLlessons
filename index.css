@@ -78,6 +78,9 @@ article img{
 article img:hover{
 	opacity: 0.5;
 }
+article fieldset{
+	text-indent: 0;
+}
 table{
 	text-indent: 0;
 	width: 100%;
@@ -103,8 +106,8 @@ ol li{
 	font-family: RobotoCondensed, courier, arial;
 	text-transform: uppercase;
 	font-size: 12px;
-  letter-spacing: .15em;
-  margin-top: -15px;
+  	letter-spacing: .15em;
+ 	margin-top: -15px;
 }
 #menu ul{
 	padding: 0;
@@ -143,15 +146,17 @@ ol li{
 	left: 0;
 	background-color: white;
 	display: none;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 3;
 }
 #menu li ul li{
 	margin: 0;
 }
-
-nav a:hover li #dropdown-content{
-	display: block;
+#menu #home{
+	color:white;
+	background-color: #531a67;
 }
+
 aside{
 	/*background-color: #b9a1d1;*/
 	float: left;
@@ -159,7 +164,6 @@ aside{
 	height:100%;
 	width: 20%;
 	margin-left: 1%;
-	margin-bottom: 600px;
 
 }
 aside img{
@@ -179,6 +183,25 @@ aside img{
 	font-family: AlexBrush, serif;
 	font-size: 1.5em;
 	text-align: center;
+}
+footer{
+	background-color: #ed829c;
+	margin: 1% 0;
+	padding: 1.5% 3% 1.5% 3%;
+	color: white;
+	font-family: RobotoCondensed, courier, arial;
+	text-transform: uppercase;
+	font-size: 11px;
+  	letter-spacing: .15em;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	overflow: hidden;
+}
+footer img{
+	position: relative;
+	float: right;
+}
+footer p{
+	float: left;
 }
 /*
 border-width: dotted solid double dashed
